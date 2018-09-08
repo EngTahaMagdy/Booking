@@ -1,0 +1,235 @@
+<htm>
+    <head>
+        <link rel="stylesheet" href="boot1/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="boot1/css/fontawesome-all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        
+        <style>
+            *
+            {
+                transition: all 1s;
+                 font-family:  'segio ui light' ;
+            }
+            
+           #input-search {
+                  background-image: url('images/searchicon.png');
+                  background-position: 10px 10px;
+                  background-repeat: no-repeat;
+                  width: 100%;
+                  font-size: 16px;
+                  padding: 12px 20px 12px 40px;
+                  border: 1px solid #ddd;
+                  margin-bottom: 12px;
+                }
+            header
+            {
+                background: #09c;
+                height: 40px;
+                margin-bottom: 25px
+            }
+            header span
+            {
+                color:#fff;
+                margin-left: 65px;
+                font-weight:500 ;
+                font-family: 'Lobster', cursive;
+                font-size: 140%;
+                line-height: 1.9
+                
+
+            }
+            header i
+            {
+                color:#fff;
+                margin-right: 10px;
+                font-size:130%;
+                animation: smile infinite 2s;
+                
+                
+            }
+            @keyframes smile
+            {
+                0%{opacity: 0}
+                50%{opacity: .5}
+                70%{opacity: .7}
+                90%{opacity: .9}
+                100%{opacity: 1}
+            }
+            header i:hover
+            {
+                color:#fff
+            }
+        </style>
+    </head>
+    <body>
+    
+        
+        
+        <header>
+           
+            <span> <i class="far fa-smile "></i>My Booking <i class="far fa-smile"></i>
+</span>
+        </header>
+        <div class="container ">
+           
+           
+            <!--    Slide
+            #slide
+            {
+                width: 60%;
+                margin: auto;
+                position: relative
+            }
+            #slide img
+            {
+                width: 100%;
+             
+            }
+            #slide .next
+            {
+                position: absolute;
+                left: 0;
+                top:40%;
+                margin-left: 10px;
+                box-shadow: 2px 2px 10px #ccc;
+                transition: all .2s
+            }
+            #slide .next:active,#slide .prev:active 
+            {
+                background: #8e8e8e;
+                
+            }
+            #slide .prev
+            {
+                position: absolute;
+                right: 0;
+                top:40%;
+                margin-right: 10px;
+                box-shadow: 2px 2px 10px #ccc
+            }
+            <div id="slide" class="py-3">
+                <img src="../session4_boot/boot1/images/1.jpg">
+                <img src="../session4_boot/boot1/images/2.jpg">
+                <img src="../session4_boot/boot1/images/3.jpg">
+                <img src="../session4_boot/boot1/images/4.jpg">
+            
+                <button class="btn next" onclick='slidesss(1)'>
+                    <i class="fas fa-arrow-left fa-sm  "></i>
+                </button>
+
+                <button class="btn prev "onclick='slidesss(-1)'>
+                    <i class="fas fa-arrow-right fa-sm  "></i>
+                </button>
+
+            </div>            
+          -->   
+            
+            <h1>booking confirmation
+
+                
+                    <button onclick="toggle()"  id="btn-toggle" class="btn btn-outline-danger">Hide 
+                        
+                        <i class="fas fa-arrow-up fa-sm  "></i></button>
+                </h1>
+            
+            <div class="form-group " id="form" >
+                
+                <label> User Name:</label>
+                <input class="form-control" id="uname" type="text" >
+                <label>Mail:</label>
+                <input class="form-control" id="umail" type="email">
+                <label>Phone:</label>
+                <input class="form-control" id='uphone' type="tel">
+                <label>Location:</label>
+                <input class="form-control" id='ulocation' type="text">
+                <label>Time:</label>
+                <input class="form-control" id='utime' type="time">
+                
+                <button  onclick="addRecord()" class="btn btn-danger my-4 float-right">Add</button>
+                
+                
+               <input type="text" id="input-search" onkeyup="search()" placeholder="Search For Names">
+            </div>
+            
+           
+            
+            <div class="clearfix"></div>
+            
+            
+            
+            
+            
+            <table id="table" class="table table-striped text-center w-100 ">
+            
+                <thead class="pl-5">
+                
+                    <th>Username</th>
+                    <th>Mail</th>
+                    <th>Phone</th>
+                    <th>Location</th>
+                    <th>Time</th>
+                
+                </thead>
+                <tbody id="tbody">
+                    
+                
+                   
+                    
+                    
+                    
+                </tbody>
+            
+            
+            </table>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+               
+        
+        
+        
+        </div>
+        
+        
+       <!-- 
+        <div class="container">
+        
+            <h1>TPhone
+            
+            <button class="btn btn-warning btn-sm " onclick="show()" id="toggle">Hidden
+                <i class="fa fa-toggle-on"></i>
+                </button>
+            </h1>
+            
+            <div id="toggle1">
+                <div class="form-group">
+                    <label>UserName</label>
+                    <input id="uname" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label>UserPhone</label>
+                    <input id="uphone" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>User E-mail</label>
+                    <input id="uemail" class="form-control">
+                </div>
+        
+            </div>
+        </div>  
+        
+    -->
+    <script src="mine.js"></script>
+    </body>
+</htm>
